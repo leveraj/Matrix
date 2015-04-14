@@ -18,6 +18,7 @@
 /*---------------------------------------------------------------------
  *    INCLUDES
  *--------------------------------------------------------------------*/
+#if 0
 #include <cfg/can/canpool_inc.h>
 
 #include <cfg/can/canap.cfg>
@@ -111,8 +112,8 @@ void  ApplCanFatalError(CAN_CHANNEL_CANTYPE_FIRST vuint8 errorNumber)
 {
 
 }
-
-#if defined(C_ENABLE_FULLCAN_OVERRUN)
+#endif
+ defined(C_ENABLE_FULLCAN_OVERRUN)
 C_CALLBACK_1 void C_CALLBACK_2 ApplCanFullCanOverrun ( CAN_CHANNEL_CANTYPE_ONLY )
 {
 
